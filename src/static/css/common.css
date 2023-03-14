@@ -1,0 +1,25 @@
+/*
+全局的样式文件 初始化样式等 通用样式等
+*/
+html,
+body {
+	width: 100vw;
+	height: 100vh;
+	overflow: hidden;
+}
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Flexa';
+}
+
+.text-white {
+	color: #fff;
+}
+.link-btn {
+	color: #858b9c;
+	text-decoration: underline;
+	user-select: none;
+	cursor: pointer;
+}

@@ -1,0 +1,169 @@
+.couponBannerView {
+	width: 1440px;
+	height: 300px;
+	background-color: #2d2765;
+	transition: all 0.3s;
+	position: relative;
+}
+.imageView {
+	width: 100%;
+	height: 100%;
+	background-image: url('../../static/images/1440bg.png');
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.innerView {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding: 40px 60px 50px 372px;
+}
+.sloganView {
+	width: 312px;
+	height: 172px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+.sloganView div:nth-child(1) {
+	font-size: 30px;
+	color: #fff;
+}
+
+.sloganView div:nth-child(2) {
+	font-size: 54px;
+	color: #fff;
+	font-weight: bold;
+}
+.cardView {
+	width: 534px;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: flex-end;
+}
+.unitText {
+	color: #fff;
+}
+.cardViewTop {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+.restTimeText {
+	color: #2e2662;
+	background-color: #d7d4fa;
+	display: inline-block;
+	padding: 4px 2px;
+	line-height: 14px;
+	margin: 0 4px;
+	font-weight: bold;
+}
+.timePrevText {
+	margin-right: 8px;
+}
+.cardViewBottom {
+	width: 534px;
+	height: 150px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	position: relative;
+	background: url('../../static/images/cardBg.png') no-repeat;
+	background-size: 100% 100%;
+}
+.LinkBtn {
+	position: absolute;
+	bottom: 20px;
+	right: 20px;
+}
+.offTextView {
+	font-weight: bold;
+	width: 170px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+.offTextViewValue {
+	font-size: 36px;
+}
+.offTextViewLabel {
+	font-size: 20px;
+}
+.cardContentView {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: space-between;
+}
+.cardContentView span:nth-child(1) {
+	font-size: 20px;
+	font-weight: bold;
+	margin-bottom: 5px;
+}
+.cardContentView span:nth-child(4) {
+	color: #fff;
+	width: 206px;
+	height: 32px;
+	display: inline-block;
+	background-color: #272832;
+	text-align: center;
+	line-height: 32px;
+	margin-top: 15px;
+	cursor: pointer;
+	user-select: none;
+}
+.cardContentView span:nth-child(4):active {
+	opacity: 0.7;
+}
+@media (max-width: @divideWidth) {
+	.couponBannerView {
+		width: 768px;
+		height: 817px;
+	}
+	.imageView {
+		background-image: url('../../static/images/768bg.png');
+	}
+	.innerView {
+		flex-direction: column;
+		padding: 60px;
+		align-items: flex-start;
+		justify-content: space-between;
+	}
+	.cardView {
+		width: 100%;
+		align-items: flex-start;
+		justify-content: flex-end;
+	}
+	.cardViewBottom {
+		width: 100%;
+		height: 204px;
+		margin-top: 30px;
+	}
+	.cardContentView span:nth-child(4) {
+		width: 330px;
+		height: 54px;
+		line-height: 54px;
+	}
+	.sloganView {
+		width: 340px;
+		height: auto;
+	}
+	.sloganView div:nth-child(2) {
+		font-size: 110px;
+		line-height: 110px;
+		margin-top: 30px;
+	}
+}
